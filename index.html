@@ -1,0 +1,334 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>tercera aplicacion</title>
+
+<!--grupo CSS-->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/tema-app3.min.css"/> 
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/balance.jpg','imagenes/eco.jpg','imagenes/ahorroenergia.jpg')">
+
+ <div data-role="page" id="principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1> CONTAMINACION AMBIENTAL</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h4> EJEMPLO DE CONTAMINACION</h4>
+     <div>
+      <p>esta es una imagen de la contaminacion:</p>
+      <br>
+      </div>
+      <div>
+        <img src="imagenes/cntaminacion.jpg" width="50%" height="50%">
+       </div>
+     </div>
+    </div>
+    <div>
+      <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+      <li class="ui-first-child ui-last-child">
+         <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2>DEFINICION</h2>
+            <p>se muestra la definicion</p>
+         </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+          <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2>TIPOS DE CONTAMINACION</h2>
+            <p>sse muestran los diferentes tipos de contaminación</p>
+          </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+         <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>CONSECUENCIAS DE LA CONTAMINACION</h2>
+           <p>muestra las consecuencias a causa de la contaminación</p>
+         </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+          <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2> 3 R</h2>
+            <p>Muestra las tres reglas de R</p>
+          </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+         <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>MEDIDAS PREVENTIVAS</h2>
+           <p>muestra medidas preventivas de la contaminación</p>
+         </a>
+       </li>
+        <li class="ui-first-child ui-last-child">
+         <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>LA CONTAMINACION EN MI ENTORNO</h2>
+           <p>muestra la contaminación en mi entorno</p>
+         </a>
+       </li>
+       </ul>
+     </div>
+     <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+       <div>
+          <img src="imagenes/mundo.png" width="46" height="46">
+        </div>
+        <div>
+          <h4>Aplicacion Tres</h4>
+          <h4>Robles Montes Rosa Michelle</h4>
+        </div>
+       </div>
+       </div>
+        <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+            <h1>DEFINICION</h1>
+         </div>
+         <div data-role="content" align="center">
+         
+           <div>
+           <img src="imagenes/definicion.jpg">
+             <p>Se denomina contaminación ambiental a la presencia en el ambiente de cualquier agente (físico, químico o biológico) o bien de una combinación de varios agentes en lugares, formas y concentraciones tales que sean o puedan ser nocivos para la salud, la seguridad o para el bienestar de la población, o bien, que puedan ser perjudiciales para la vida vegetal o animal, o impidan el uso normal de las propiedades y lugares de recreación y goce de los mismos.El progreso tecnológico, por una parte y el acelerado crecimiento demográfico, por la otra, producen la alteración del medio, llegando en algunos casos a atentar contra el equilibrio biológico de la Tierra</p>
+           </div>
+          </div>
+         <div data-role="footer" data-theme="b" data-position="fixed">
+           <h4>Aplicacion Tres, RMRM</h4>
+         </div>
+           </div>
+        </div>
+      
+       <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+            <h1>TIPOS DE CONTAMINACION</h1>
+         </div>
+         <div data-role="content" align="center">
+           <div>
+             <h2>Contaminación del Agua</h2>
+              <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+           
+             <h4>ejemplo</h4>
+               <img src="imagenes/agua.jpg" width="40%" height="40%">
+           </div>
+          </div>
+          <h2>Contaminación del aire</h2>
+           <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+           
+             <h4>ejemplo</h4>
+               <img src="imagenes/contaminacionaire.jpg" width="40%" height="40%">
+           </div>
+          </div>
+          <h2>Contaminación del Suelo</h2>
+          <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+           
+             <h4>ejemplo</h4>
+               <img src="imagenes/suelo.jpg" width="40%" height="40%">
+           </div>
+          </div>
+          <h2>Contaminación Térmica</h2>
+           <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+           
+             <h4>ejemplo</h4>
+               <img src="imagenes/termica.png" width="40%" height="40%">
+           </div>
+          </div>
+          <h2>Contaminación Acústica</h2>
+          <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+           
+             <h4>ejemplo</h4>
+               <img src="imagenes/acustica.jpg" width="40%" height="40%">
+           </div>
+          </div>
+          <h2>Contaminación Lumínica</h2>
+           <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+           
+             <h4>ejemplo</h4>
+               <img src="imagenes/luminica.png" width="40%" height="40%">
+           </div>
+          </div>
+          
+         
+             </div>
+           </div>
+         <div data-role="footer" data-theme="b" data-position="fixed">
+           <h4>Aplicacion Tres, RMRM</h4>
+         </div>
+           </div>
+        </div>
+       
+         <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+            <h1>CONSECUENCIAS DE LA CONTAMINACION</h1>
+         </div>
+         <div data-role="content" align="center">
+         <div>
+         <h2> *Concecuencias  </h2>
+         <p> 1.-Ondas de calor en lugares de climas frescos </p>
+         <p> 2.-El calentamiento global provoca aumento del nivel del mar</p> 
+         <p>3.-ciclones y huracanes          </p>
+         <p> 4.-derretimiento de glaciares</p>
+         <h2>*concecuencias de la contaminacion</h2>
+         <p>  5.-salud por la presencia de Dióxido de Sulfuro y Dióxido de Nitrógeno </p>
+         <p>6.-debilitación del esperma en los hombres jóvenes y maduros         </p>
+         <p>  7.-anualmente 1,3 millones de personas mueren a causa de la contaminación en las ciudades </p> <P>&nbsp;</P>
+         <p>&nbsp;</p>
+           <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+             <h4>CALENTAMIENTO GLOBAL</h4>
+             
+               <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('global','','imagenes/balance.jpg',1)"><img src="imagenes/global.jpg" width="500" height="454" id="global"></a></p>
+               <p>El calentamiento del sistema climático es inequívoco, como se desprende ya del aumento observado del promedio mundial de temperatura del aire y del océano, de la fusión generalizada de nieves y hielos, y del aumento del promedio mundial del nivel del mar.
+               La principal fuente de contaminación por la emisión de bióxido de carbono son las plantas de generación de energía a base de carbón, pues emiten 2,500 millones de toneladas al año</p>
+               
+               <p>Los científicos coinciden también en que las emisiones de gases efecto invernadero han sido muy intensas a partir de la Revolución Industrial, momento a partir del cual la acción del hombre sobre la naturaleza se hizo intensa.</p>
+                <img src="imagenes/calentaminetoglo.jpg" width="40%" height="40%">
+           </div>
+          </div>
+           </div>
+         <div data-role="footer" data-theme="b" data-position="fixed">
+           <h4>Aplicacion Tres, RMRM</h4>
+         </div>
+           </div>
+        </div> 
+        
+         <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+            <h1> Regla de las 3R</h1>
+         </div>
+         <div data-role="content" align="center">
+           <div>
+             <h2>Reducir, Reutilizar y Reciclar.</h2>
+             </div>
+           <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('regla3','','imagenes/eco.jpg',1)"><img src="imagenes/3rs.png" width="857" height="417" id="regla3"></a></p>
+           <p>Las tres erres (3R) es una regla para cuidar el medio ambiente, específicamente para reducir el volumen de residuos o basura generada. En pocas palabras, las 3R te ayudan a tirar menos basura, ahorrar dinero y ser un consumidor más responsable, así reduciendo tu huella de carbono. Y lo mejor de todo es que es muy fácil de seguir, ya que sólo tiene tres pasos: reducir, reutilizar y reciclar.</p>
+           <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+             <h4>REDUCIR</h4>
+              <p> reducir lo que estamos diciendo es que se debe tratar de reducir o simplificar el consumo de los productos directos, o sea, todo aquello que se compra y se consume, ya que esto tiene una relación directa con los desperdicios, a la vez que también la tiene con nuestro bolsillo. Por ejemplo, en vez de comprar 6 botellas pequeñas de una bebida, se puede conseguir una o dos grandes, teniendo el mismo producto pero menos envases sobre los que preocuparse.</p>
+               <img src="imagenes/reducir.jpg" height="40%">
+           </div>
+          </div>
+          <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+             <h4>REUTILIZAR</h4>
+              <p> reutilizar, nos estamos refiriendo a poder volver a utilizar las cosas y darles la mayor utilidad posible antes de que llegue la hora de deshacernos de ellas, dado que al disminuir el volumen de la basura.
+Esta tarea suele ser la que menos atención recibe y es una de las mas importantes, que también ayuda mucho la economía en casa.</p>
+               <img src="imagenes/reutilizar.jpg" width="40%" height="40%">
+           </div>
+          </div>
+          <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+             <h4>RECICLAR</h4>
+             <p>  reciclar, que consiste en el proceso de someter los materiales a un proceso en el cual se puedan volver a utilizar, reduciendo de forma verdaderamente significativa la utilización de nuevos materiales, y con ello, mas basura en un futuro.</p>
+               <img src="imagenes/reciclar.jpg" width="40%" height="40%">
+           </div>
+          </div>
+         </div>
+         <div data-role="footer" data-theme="b" data-position="fixed">
+           <h4>Aplicacion Tres, RMRM</h4>
+         </div>
+           </div>
+        </div>
+        
+         <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+            <h1>MEDIDAS PREVENTIVAS</h1>
+         </div>
+         <div data-role="content" align="center">
+           <div>
+             <p> Evitar la erosión ocasionada por el agua, el aire o el mismo hombre.</p>
+ <p>- Evitar la práctica del monocultivo, que consiste en sembrar siempre en el mismo suelo, el mismo vegetal.
+ <p>- Evitar el sobre pastoreo, es conveniente llevar los animales de un lugar a otro, con la finalidad que el pasto vuelva a crecer.</p>
+ <p>- Construir terrazas y sembrar en contorno, cuando se siembra sobre terrenos inclinados.</p>
+ <p>- Sembrar árboles que sirvan de rompevientos para que disminuyan el impulso del viento y no destruya los sembradíos.</p>
+ <p>- Evitar la tala y la quema descontrolada por sus efectos para la erosión y la eliminación de microorganismos.</p>
+ <p>- Enriquecer el suelo añadiendo abonos que sustituyan los elementos nutritivos que han tomado los vegetales.</p>
+ </div>
+           <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ahorro','','imagenes/ahorroenergia.jpg',1)"><img src="imagenes/ahorroagua.jpg" width="315" height="450" id="ahorro"></a></p>
+          <a href=" http://web.unep.org/americalatinacaribe/"  target="_self"> ir a la pagina de ONU</a>
+         </div>
+         <div data-role="footer" data-theme="b" data-position="fixed">
+           <h4>Aplicacion Tres, RMRM</h4>
+         </div>
+           </div>
+        </div>
+        
+         <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+            <h1>CONTAMINACION EN MI ENTORNO</h1>
+         </div>
+         <div data-role="content" align="center">
+           <div>
+             <h2>MIS PROPUESTAS PARA EVITAR LA CONTAMINACION</h2>
+            <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/cont4.jpg" alt="cont4" title="cont4" id="wows1_0"/></li>
+		<li><img src="data1/images/cont5.jpg" alt="cont5" title="cont5" id="wows1_1"/></li>
+		<li><img src="data1/images/contaminacion1.jpg" alt="contaminacion1" title="contaminacion1" id="wows1_2"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/contaminacion2.jpg" alt="bootstrap slider" title="contaminacion2" id="wows1_3"/></a></li>
+		<li><img src="data1/images/contaminacion3.jpg" alt="contaminacion3" title="contaminacion3" id="wows1_4"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="cont4"><span><img src="data1/tooltips/cont4.jpg" alt="cont4"/>1</span></a>
+		<a href="#" title="cont5"><span><img src="data1/tooltips/cont5.jpg" alt="cont5"/>2</span></a>
+		<a href="#" title="contaminacion1"><span><img src="data1/tooltips/contaminacion1.jpg" alt="contaminacion1"/>3</span></a>
+		<a href="#" title="contaminacion2"><span><img src="data1/tooltips/contaminacion2.jpg" alt="contaminacion2"/>4</span></a>
+		<a href="#" title="contaminacion3"><span><img src="data1/tooltips/contaminacion3.jpg" alt="contaminacion3"/>5</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">image slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+              <p> 1.-Hacer camapañas de limpieza cada fin de semana  </p>
+              <p> 2.-reciclar las cosas que se pueda  </p>
+              <p> 3.-reunirnos y plantar arboles u otro tipo de plantas  </p>
+              <p> 4.-no desperdiciar agua </p>
+              <p> 5.-no quemar terrenos de basura  </p>
+           </div>
+          </div>
+         <div data-role="footer" data-theme="b" data-position="fixed">
+           <h4>Aplicacion Tres, RMRM</h4>
+         </div>
+           </div>
+        </div>
+         
+        
+  </body>
+</html>
